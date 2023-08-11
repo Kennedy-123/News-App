@@ -90,7 +90,8 @@ footer a {
   padding-right: 35px;
 }
 
-@media(max-width: 500px){
+/* small screen */
+@media (max-width: 425px){
   hr{
     max-width: 500px;
   }
@@ -101,5 +102,39 @@ footer a {
     position: relative;
     right: 700px;
     top: 5px;
+  }
+  img{
+    width: 100%;
+  }
+}
+
+/* large screens */
+@media (min-width: 786px) {
+  .grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  nav{
+    position: relative;
+    right: 10px;
+    top: -30px;
+  }
+  img{
+    width: 100%;
+  }
+}
+
+/* medium screens */
+@media (min-width: 425px) and (max-width: 785px){
+  .grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  nav{
+    position: relative;
+    right: 430px;
+    top: 5px;
+    width: 100%;
+  }
+  img{
+    width: 100%;
   }
 }
