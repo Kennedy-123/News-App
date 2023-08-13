@@ -24,7 +24,6 @@ const getData = async() => {
         img.appendChild(title)
         grid.appendChild(img)
     })
-    console.log(res)
 }
 
 getData()
