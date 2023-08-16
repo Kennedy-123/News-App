@@ -5,7 +5,7 @@ const grid = document.querySelector('.grid')
 const getData = async() => {
     const data = await fetch(`https://newsapi.org/v2/top-headlines?sources=cnn&apiKey=${apiKey}`)
     const res = await data.json()
-    res.articles.forEach(obj => {
+    res.articles.map(obj => {
         const img = document.createElement('div')
         const title = document.createElement('p')
         const imgElement = document.createElement('img')
